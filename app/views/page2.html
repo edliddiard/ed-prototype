@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <h1 class="heading-large">How much do you rate Ed
+      </h1>
+
+      <form class="form" action="/url/of/next/page" method="post">
+        <form>
+          <div class="form-group">
+            <fieldset class="inline">
+
+              <legend>
+                <h1 class="heading-medium">
+                  Would you like to give Ed Money?
+                </h1>
+              </legend>
+
+              <div class="multiple-choice">
+                <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                <label for="radio-inline-1">Yes</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+                <label for="radio-inline-2">Yes</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </form>
+
+        <p>[See <a href="https://govuk-elements.herokuapp.com/form-elements/">GOV.UK Elements</a> for examples]</p>
+
+        <p>
+          <a class="button button-start" href="confirmation-page" role="button">Continue</a>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
